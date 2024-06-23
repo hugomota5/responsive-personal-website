@@ -1,0 +1,171 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+BR:wght@100..400&display=swap");
+/* VARIABLES CSS */
+
+:root {
+  --header-height: 4.5rem;
+
+  /* Colors elements */
+
+  --background-color-primary: #004643; /* Fundo */
+  --color-main: #e8e4e6; /* Cor principal */
+  --color-secundary: #abd1c6; /* Parágrafos */
+  --color-tertiary: #e16162; /* Cor terciário */
+  --color-title: #fffffe; /* Títulos chamativos*/
+  --color-stroke: #001e1d; /* Linhas e Contornos*/
+  --background-color-button: #f9bc60; /* Fundo botão / cor destauqe*/
+
+  /* Font and typography */
+  --body-font: "Open Sans", sans-serif;
+  --logo-font: "Playwrite BR", cursive;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+
+  /* Font weight */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Z index */
+  --z-fixed: 1000;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    /* Font and typography */
+
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+  }
+}
+
+/* BASE */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--background-color-primary);
+  color: var(--color-secundary);
+  height: 500rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-title);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* LAYOUT */
+
+.container {
+  max-width: 1200px;
+  /* margin: var(--mb-1-5) var(--mb-1-5); */
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* HEADER AND NAVIGATION */
+
+header {
+  width: 100%;
+  /* padding: 3rem 5vw; */
+  position: fixed;
+  top: 0;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); */
+  min-height: var(--header-height);
+  border-bottom: var(--color-stroke) 1px solid;
+  z-index: var(--z-fixed);
+}
+
+/* NAV */
+
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--color-title);
+  font-family: var(--logo-font);
+}
+
+.nav__logo:hover {
+  color: var(--color-main);
+}
+
+.nav__toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__toggle:hover {
+  color: var(--color-main);
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    width: 70%;
+    top: 6vh;
+    right: 15px;
+    background-color: #abd1c6;
+    padding: 2rem 1.5rem 4rem;
+    border-radius: 0.5rem 0 0.5rem 0.5rem;
+    -webkit-box-shadow: -5px 5px 4px -1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -5px 5px 4px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: -5px 5px 4px -1px rgba(0, 0, 0, 0.15);
+    transition: .3s ease-in-out;
+  }
+}
