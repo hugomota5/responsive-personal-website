@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -17,41 +17,84 @@
     <nav class="nav container d-flex">
       <a href="#" class="nav__logo">Hugo Mota</a>
       <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list grid">
+        <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link"><i class="ri-home-2-fill"></i>Página Inicial</a>
+            <a href="#home" class="nav__link"><i class="ri-home-2-fill nav__icon"></i>Página Inicial</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link"><i class="ri-profile-fill"></i></i>Sobre</a>
+            <a href="#about" class="nav__link"><i class="ri-profile-fill nav__icon"></i></i>Sobre</a>
           </li>
           <li class="nav__item">
-            <a href="#projects" class="nav__link"><i class="ri-file-settings-fill"></i></i>Projetos</a>
+            <a href="#projects" class="nav__link"><i class="ri-file-settings-fill nav__icon"></i></i>Projetos</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link"><i class="ri-contacts-fill"></i>Contato</a>
+            <a href="#contact" class="nav__link"><i class="ri-contacts-fill nav__icon"></i>Contato</a>
           </li>
-
         </ul>
-        <!-- CLOSE MENU MOBILE -->
-        <i class="ri-close-fill"></i>
+        <!-- CLOSE BUTTON -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-fill nav__close-icon"></i>
+        </div>
+        <!-- CLOSE BUTTON - END -->
       </div>
+
       <!-- MENU MOBILE -->
       <div class="nav__buttons">
         <div class="nav__toggle" id="nav-toggle">
           <i class="ri-menu-3-fill"></i>
         </div>
       </div>
-
+      <!-- MENU MOBILE - END -->
     </nav>
 
   </header>
   <!-- HEADER / NAVIGATION - END -->
 
   <!-- MAIN SECTION -->
-   <!-- MAIN SECTION - END -->
+  <main class="main">
+    <!-- SECTION HOME -->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__perfil">
+          <div class="home__image">
+            <img class="home__image__perfil" src="./assets/img/avatar-freepik.jpg" alt="Foto de perfil" srcset="">
+            <div class="home__shadow"></div>
+          </div>
+        </div>
+
+
+        <div class="home__social">
+          <a href="https://github.com" target="_blank" class="home__social-link"><i class="ri-github-fill"></i></a>
+          <a href="https://br.linkedin.com" target="_blank" class="home__social-link"><i
+              class="ri-linkedin-box-fill"></i></a>
+        </div>
+
+        <div class="home__info">
+          <h1 class="home__info__name">Olá, eu sou Hugo!</h1>
+          <p class="home__info__description">
+            Estudante de <b>Análise e Desenvolvimento de Sistemas</b> e Técnico em Informática.
+          </p>
+          <p class="home__info__description">
+            Em formação para me tornar um <b>Desenvolvedor Web</b>, quero criar coisas como sites acessíveis e intuitivos para todos.
+          </p>
+          <p class="home__info__description">
+            Pretendo utilizar este site como minha <b>"base"</b> na internet, onde irei compartilhar idéias sobre coisas que me interessam, seja sobre desenvolvimento web ou meus hobbies.
+          </p>
+          <a href="#" class="home__scroll">
+            <div class="home__scroll-box"><i class="ri-scroll-to-bottom-fill"></i></div>
+            <span class="home__scroll-text">Rolar para baixo</span>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- SECTION HOME - END -->
+  </main>
+  <!-- MAIN SECTION - END -->
 
   <!-- FOOTER -->
-   <!-- FOOTER - END -->
+  <!-- FOOTER - END -->
 
 
 
